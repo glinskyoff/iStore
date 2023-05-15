@@ -1,0 +1,119 @@
+.favoritesInner {
+  margin-top: 50px;
+
+  .title {
+    color: #646669;
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 500;
+  }
+
+  .favoritesBlock {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+
+  .favoritesBlockEmpty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 100px;
+
+    .title {
+      color: #646669;
+      font-size: 46px;
+      line-height: 63px;
+      font-weight: 500;
+
+      margin-top: 100px;
+    }
+
+    .desc {
+      color: #646669;
+      font-size: 36px;
+      line-height: 49px;
+      font-weight: 500;
+
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .favoritesInner .favoritesBlock {
+    gap: 10px;
+  }
+
+  .cardBlock {
+    padding: 20px;
+  }
+
+  .cardBlock .cardButtonBlock .cardButtonBuy {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cardBlock {
+    padding: 15px;
+
+    .cardImg img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .cardButtonBlock {
+      .cardButtonBuy {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .favoritesInner .favoritesBlock {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardBlock {
+    padding: 25px;
+
+    .cardImg img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .cardButtonBlock {
+      .cardButtonBuy {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .favoritesInner .favoritesBlock {
+    margin-top: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cardBlock {
+    padding: 25px;
+
+    .cardImg img {
+      width: 250px;
+      height: 250px;
+    }
+
+    .cardButtonBlock {
+      .cardButtonBuy {
+        width: 81%;
+      }
+    }
+  }
+}

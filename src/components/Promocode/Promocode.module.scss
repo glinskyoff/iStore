@@ -1,0 +1,216 @@
+.promocode {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 30px 25px;
+
+  width: 434px;
+  height: 440px;
+
+  .block {
+    .title {
+      color: #646669;
+      font-size: 24px;
+      line-height: 33px;
+      font-weight: 600;
+    }
+  }
+
+  .group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+
+    input {
+      display: block;
+      width: 333px;
+      height: 42px;
+      border: 1px solid #323437;
+      border-radius: 5px;
+      outline: none;
+      background: transparent;
+      color: #646669;
+      line-height: 22px;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 10px 14px;
+    }
+
+    button {
+      position: relative;
+      background: #323437;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: url("./images/bigArrow.svg");
+        width: 24px;
+        height: 24px;
+        top: 9px;
+        left: 9px;
+      }
+
+      &:hover {
+        background: #232527;
+      }
+    }
+  }
+  .success {
+    color: #009922;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    user-select: none;
+
+    margin-top: 9px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 3px;
+      left: 180px;
+      background: url("./images/success.svg");
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .error {
+    color: #ff0000;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    user-select: none;
+
+    margin-top: 9px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 3px;
+      left: 160px;
+      background: url("./images/error.svg");
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .cartBlock {
+    margin-top: 35px;
+
+    .title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 27px;
+
+      span {
+        color: #646669;
+      }
+    }
+
+    .amountBlock {
+      display: flex;
+      flex-direction: column;
+
+      &:last-child {
+        margin-top: 10px;
+      }
+
+      .amount {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+          color: #646669;
+          font-size: 20px;
+          line-height: 27px;
+          font-weight: 500;
+        }
+
+        p {
+          color: #d9d9d9;
+          font-size: 20px;
+          line-height: 27px;
+          font-weight: 500;
+        }
+      }
+
+      .amountPromocode {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dashed #323437;
+        padding-bottom: 11px;
+        margin-top: 2px;
+
+        h3 {
+          color: #9ea1a6;
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 500;
+        }
+
+        p {
+          color: #d9d9d9;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 25px;
+        }
+      }
+
+      .amountTotal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        h3 {
+          color: #646669;
+          font-size: 20px;
+          line-height: 27px;
+          font-weight: 500;
+        }
+
+        p {
+          color: #d9d9d9;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+  .amountButton {
+    display: block;
+    width: 100%;
+    height: 42px;
+    border: none;
+    outline: none;
+    background: #323437;
+    border-radius: 5px;
+    color: #646669;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    &:hover {
+      background: #232527;
+    }
+  }
+}
