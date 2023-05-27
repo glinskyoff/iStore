@@ -4,7 +4,7 @@ import styles from "./Carts.module.scss";
 import iphone from "../Cards/images/phones/iphone13_green.png";
 
 export const Carts: React.FC = () => {
-  const price = 83999;
+  const price = 75990;
   const [cartItemAmount, setCartItemAmount] = React.useState(1);
 
   const cartItemDecrement = () => {
@@ -21,9 +21,12 @@ export const Carts: React.FC = () => {
         <div className={styles.groupInfo}>
           <img src={iphone} alt="iphone" />
           <div className={styles.info}>
-            <h1>Apple iPhone 6</h1>
-            <h2>32 Гб / Серый</h2>
+            <h1>Apple iPhone 13</h1>
+            <h2>256 Гб / Зелёный</h2>
+            {/* <div className={styles.block}> */}
             <h4>645013</h4>
+            {/* <button>Убрать из корзины</button> */}
+            {/* </div> */}
           </div>
         </div>
         <div className={styles.groupCount}>

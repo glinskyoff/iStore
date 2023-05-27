@@ -32,8 +32,13 @@
     line-height: 27px;
     font-weight: 500;
 
-    margin-bottom: 10px;
+    margin-bottom: 27px;
   }
+
+  // .block {
+  //   display: flex;
+  //   align-items: center;
+  //   column-gap: 25px;
 
   h4 {
     color: #646669;
@@ -41,6 +46,24 @@
     line-height: 22px;
     font-weight: 500;
   }
+
+  // button {
+  //   display: block;
+  //   background: transparent;
+  //   border: none;
+  //   outline: none;
+  //   color: #646669;
+  //   font-size: 16px;
+  //   line-height: 22px;
+  //   font-weight: 500;
+  //   cursor: pointer;
+  //   transition: all 0.3s ease-in-out;
+
+  //   &:hover {
+  //     color: #414144;
+  //   }
+  // }
+  // }
 }
 
 .groupCount {
@@ -94,9 +117,118 @@
     }
   }
   .price {
-    color: #fff;
+    color: #d1d0c5;
     font-weight: 500;
     line-height: 27px;
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .groupInfo {
+    column-gap: 0;
+
+    h1 {
+      font-size: 26px;
+    }
+  }
+
+  .groupCount {
+    .price {
+      margin-top: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cartItem {
+    padding: 15px;
+
+    .groupInfo {
+      align-items: center;
+
+      img {
+        width: 100px;
+        height: 98px;
+      }
+
+      h1 {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+    }
+
+    .groupCount {
+      .countBlock {
+        top: 62px;
+      }
+
+      .price {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cartItem {
+    .groupInfo {
+      img {
+        width: 80px;
+        height: 78px;
+      }
+
+      h1 {
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      h2 {
+        font-size: 15px;
+      }
+
+      h4 {
+        font-size: 15px;
+      }
+    }
+
+    .groupCount {
+      .countBlock {
+        top: 48px;
+      }
+
+      .price {
+        font-size: 18px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cartItem {
+    .groupInfo {
+      h1 {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 14px;
+      }
+
+      h4 {
+        font-size: 14px;
+      }
+    }
+
+    .groupCount {
+      .price {
+        font-size: 16px;
+      }
+    }
   }
 }

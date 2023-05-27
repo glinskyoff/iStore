@@ -90,7 +90,7 @@
     font-weight: 500;
     user-select: none;
 
-    margin-top: 9px;
+    margin-top: 5px;
     position: relative;
 
     &::before {
@@ -211,6 +211,54 @@
 
     &:hover {
       background: #232527;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .promocode {
+    width: 340px;
+    padding: 20px;
+    height: 430px;
+
+    .block {
+      .title {
+        font-size: 22px;
+      }
+    }
+
+    .group {
+      input {
+        width: 250px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .promocode {
+    width: 100%;
+
+    .group {
+      input {
+        width: 100%;
+      }
+
+      button {
+        max-width: 42px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .promocode {
+    .block {
+      .title {
+        font-size: 20px;
+      }
     }
   }
 }

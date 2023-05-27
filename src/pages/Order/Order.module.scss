@@ -40,7 +40,7 @@
   background: #1e1e1e;
   border-radius: 10px;
   padding: 25px;
-  margin-top: 40px;
+  margin-top: 30px;
 
   .orderButton {
     display: flex;
@@ -176,6 +176,12 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .orderInner {
+    margin-top: 30px;
   }
 }
 

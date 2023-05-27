@@ -2,13 +2,13 @@
   margin-top: 50px;
 
   .title {
-    color: #d1d0c5;
+    color: #646669;
     font-size: 36px;
     line-height: 49px;
     font-weight: 500;
 
     span {
-      color: #646669;
+      color: #d1d0c5;
     }
   }
 }
@@ -17,14 +17,14 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 40px;
+  margin-top: 30px;
   column-gap: 35px;
 
   .carts {
     width: 702px;
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 30px;
   }
 }
 .cartBlock {
@@ -51,5 +51,31 @@
     font-weight: 500;
 
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cartFlex {
+    column-gap: 15px;
+
+    .carts {
+      row-gap: 20px;
+    }
+  }
+
+  .cartInner {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cartFlex {
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 20px;
+
+    .carts {
+      width: 100%;
+    }
   }
 }
